@@ -2,3 +2,5 @@
 .rspec_status
 spec/api_credentials.yml
 Gemfile.lock
+
+*.gem
