@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://host/WebAPI/Shipment/Tracking
+    body:
+      encoding: UTF-8
+      string: '{"merchantID":"1234","qualifier":"Barcode","searchStrings":["42123456"]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      X-Api-Key:
+      - <API_KEY>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '7818'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 27 Nov 2017 13:01:00 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Packages":[{"ActualEstimatedDeliveryDate":null,"CarrierCode":"NEWG","CarrierCodeDescription":"Newgistics,
+        Inc.","CarrierName":"United States Postal Service","CarrierService":"Parcel
+        Select Delivery Confirmation","CarrierServiceCode":null,"CarrierServiceCodeDescription":null,"ErrorMessage":"","EstimatedDeliveryDate":null,"EstimatedDeliveryText":null,"FinalCarrier":null,"MaxEstimatedDeliveryDate":null,"MerchantName":null,"MinEstimatedDeliveryDate":null,"PackageTrackingEvents":[{"CSREventMessage":"Delivered","CarrierCode":"PTS01","CarrierDescription":"Delivered","City":"NEW
+        YORK","ConsumerEventMessage":"Delivered","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511330400000-0600)\/","Description":"Delivered","EventCode":"DEL","EventDescription":"Delivered","FacilityID":0,"FacilityName":"NEW
+        YORK, NY10003","PostalCode":"10003","State":"NY","Time":"\/Date(1511804280000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Out
+        for Delivery ","CarrierCode":"PTSOF","CarrierDescription":"Out for Delivery
+        ","City":"NEW YORK","ConsumerEventMessage":"Out for Delivery ","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511330400000-0600)\/","Description":"Out
+        for Delivery ","EventCode":"OFD","EventDescription":"Out for Delivery","FacilityID":0,"FacilityName":"NEW
+        YORK, NY10003","PostalCode":"10003","State":"NY","Time":"\/Date(1511796780000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Arrival
+        at USPS","CarrierCode":"PTS07","CarrierDescription":"Arrival at USPS","City":"NEW
+        YORK","ConsumerEventMessage":"Arrival at USPS","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511330400000-0600)\/","Description":"Arrival
+        at USPS","EventCode":"ADU","EventDescription":"Arrived at USPS delivery unit","FacilityID":0,"FacilityName":"NEW
+        YORK, NY10022","PostalCode":"10022","State":"NY","Time":"\/Date(1511791800000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Accepted
+        by USPS","CarrierCode":"AUSPS","CarrierDescription":"Accepted by USPS","City":"NEW
+        YORK","ConsumerEventMessage":"Accepted by USPS","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511330400000-0600)\/","Description":"Accepted
+        by USPS","EventCode":"AUSPS","EventDescription":"Accepted by USPS","FacilityID":0,"FacilityName":"NEW
+        YORK, NY10003","PostalCode":"10003","State":"NY","Time":"\/Date(1511776800000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Electronic
+        Shipping Sent to USPS","CarrierCode":"PTSMA","CarrierDescription":"Electronic
+        Shipping Sent to USPS","City":"","ConsumerEventMessage":"Electronic Shipping
+        Sent to USPS","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511244000000-0600)\/","Description":"Electronic
+        Shipping Sent to USPS","EventCode":"OMR","EventDescription":"Electronic Information
+        Received by USPS","FacilityID":0,"FacilityName":"","PostalCode":"","State":"","Time":"\/Date(1511831220000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"In
+        transit","CarrierCode":"SS","CarrierDescription":"In transit","City":"Elizabeth","ConsumerEventMessage":"In
+        transit","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511244000000-0600)\/","Description":"In
+        transit","EventCode":"DNF","EventDescription":"Departing Newgistics Facility","FacilityID":2601,"FacilityName":"Elizabeth","PostalCode":"07206","State":"NJ","Time":"\/Date(1511828700000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"In
+        transit","CarrierCode":"OMC","CarrierDescription":"In transit","City":"Elizabeth","ConsumerEventMessage":"In
+        transit","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511244000000-0600)\/","Description":"In
+        transit","EventCode":"OMC","EventDescription":"Electronic Information Sent
+        to USPS","FacilityID":2601,"FacilityName":"Elizabeth","PostalCode":"07206","State":"NJ","Time":"\/Date(1511827980000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Transferring
+        to USPS","CarrierCode":"SD","CarrierDescription":"Transferring to USPS","City":"NEW
+        YORK","ConsumerEventMessage":"Transferring to USPS","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511244000000-0600)\/","Description":"Transferring
+        to USPS","EventCode":"DELU","EventDescription":"Delivered to Partner Facility","FacilityID":10810,"FacilityName":"FDR
+        STATION","PostalCode":"100229998","State":"NY","Time":"\/Date(1511808900000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"In
+        transit","CarrierCode":"PS","CarrierDescription":"In transit","City":"Elizabeth","ConsumerEventMessage":"In
+        transit","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511244000000-0600)\/","Description":"In
+        transit","EventCode":"ANF","EventDescription":"Arrived at Newgistics Facility","FacilityID":2601,"FacilityName":"Elizabeth","PostalCode":"07206","State":"NJ","Time":"\/Date(1511787240000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"In
+        transit","CarrierCode":"SS","CarrierDescription":"In transit","City":"Fishers","ConsumerEventMessage":"In
+        transit","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511157600000-0600)\/","Description":"In
+        transit","EventCode":"DNF","EventDescription":"Departing Newgistics Facility","FacilityID":2594,"FacilityName":"IND2","PostalCode":"46037","State":"IN","Time":"\/Date(1511815140000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"In
+        transit","CarrierCode":"SS","CarrierDescription":"In transit","City":"Sparks","ConsumerEventMessage":"In
+        transit","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510984800000-0600)\/","Description":"In
+        transit","EventCode":"DNF","EventDescription":"Departing Newgistics Facility","FacilityID":53264,"FacilityName":"RNO2","PostalCode":"89441","State":"NV","Time":"\/Date(1511828100000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Arrived
+        at Shipping Facility","CarrierCode":"IPS","CarrierDescription":"Arrived at
+        Shipping Facility","City":"Sparks","ConsumerEventMessage":"Arrived at Shipping
+        Facility","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510984800000-0600)\/","Description":"Arrived
+        at Shipping Facility","EventCode":"IPS","EventDescription":"Inducted into
+        Newgistics Network","FacilityID":53264,"FacilityName":"RNO2","PostalCode":"89441","State":"NV","Time":"\/Date(1511797860000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Electronic
+        Shipping Info Received","CarrierCode":"PSC","CarrierDescription":"Electronic
+        Shipping Info Received","City":"San Leandro","ConsumerEventMessage":"Electronic
+        Shipping Info Received","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510984800000-0600)\/","Description":"Electronic
+        Shipping Info Received","EventCode":"PSC","EventDescription":"Shipped from
+        Client","FacilityID":54041,"FacilityName":"ThredUp Delivery CA","PostalCode":"94577","State":"CA","Time":"\/Date(1511766360000-0600)\/","TrackingKey":"335980201","UpdateDate":"\/Date(-62135575200000-0600)\/"}],"ReferenceNumber":"42123456","Service":"SHIPMENT","ShipToAddressLine1":"33
+        IRVING PL","ShipToAddressLine2":"FL 4","ShipToCity":"NEW YORK","ShipToName":"Samantha
+        Jacob ","ShipToPostalCode":"10003","ShipToState":"NY","Signer":null,"Status":"Delivered","TrackingNumber":"42123456","UnitOfMeasure":"pounds","Weight":16.2000}]}'
+    http_version:
+  recorded_at: Mon, 27 Nov 2017 13:01:07 GMT
+recorded_with: VCR 3.0.3

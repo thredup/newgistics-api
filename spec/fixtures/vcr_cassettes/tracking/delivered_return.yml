@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://host/WebAPI/Shipment/Tracking
+    body:
+      encoding: UTF-8
+      string: '{"merchantID":"1234","qualifier":"Barcode","searchStrings":["72123456"]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      X-Api-Key:
+      - <API_KEY>
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '4191'
+      Content-Type:
+      - application/json; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 24 Nov 2017 14:24:09 GMT
+    body:
+      encoding: UTF-8
+      string: '{"Packages":[{"ActualEstimatedDeliveryDate":null,"CarrierCode":"NEWG","CarrierCodeDescription":"Newgistics,
+        Inc.","CarrierName":"United States Postal Service","CarrierService":"USPS
+        Return Delivery Unit 5DZ","CarrierServiceCode":null,"CarrierServiceCodeDescription":null,"ErrorMessage":"","EstimatedDeliveryDate":null,"EstimatedDeliveryText":null,"FinalCarrier":null,"MaxEstimatedDeliveryDate":null,"MerchantName":null,"MinEstimatedDeliveryDate":null,"PackageTrackingEvents":[{"CSREventMessage":"Package
+        delivered to returns processing facility.","CarrierCode":"SDRC","CarrierDescription":"Delivered","City":"Vernon
+        Hills","ConsumerEventMessage":"Package delivered to returns processing facility.","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1511157600000-0600)\/","Description":"Delivered","EventCode":"DRC","EventDescription":"Delivered
+        to Return Center","FacilityID":54049,"FacilityName":"ThredUp Returns IL Bag","PostalCode":"60061","State":"IL","Time":"\/Date(1511568000000-0600)\/","TrackingKey":"380748045","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Package
+        in-transit to returns processing facility.","CarrierCode":"SS","CarrierDescription":"In
+        transit","City":"Sparks","ConsumerEventMessage":"Package in-transit to returns
+        processing facility.","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510639200000-0600)\/","Description":"In
+        transit","EventCode":"DNF","EventDescription":"Departing Newgistics Facility","FacilityID":53264,"FacilityName":"RNO2","PostalCode":"89441","State":"NV","Time":"\/Date(1511568600000-0600)\/","TrackingKey":"380748045","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Package
+        scanned by Newgistics.","CarrierCode":"IPS","CarrierDescription":"Arrived
+        at Shipping Facility","City":"Sparks","ConsumerEventMessage":"Package scanned
+        by Newgistics.","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510639200000-0600)\/","Description":"Arrived
+        at Shipping Facility","EventCode":"IPS","EventDescription":"Inducted into
+        Newgistics Network","FacilityID":53264,"FacilityName":"RNO2","PostalCode":"89441","State":"NV","Time":"\/Date(1511547900000-0600)\/","TrackingKey":"380748045","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Processed
+        by USPS","CarrierCode":"PTS10","CarrierDescription":"Enroute to Local USPS
+        Facility","City":"OAKLAND","ConsumerEventMessage":"Processed by USPS","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510466400000-0600)\/","Description":"Enroute
+        to Local USPS Facility","EventCode":"UPROC","EventDescription":"Processed
+        by USPS","FacilityID":0,"FacilityName":"","PostalCode":"94615","State":"CA","Time":"\/Date(1511539380000-0600)\/","TrackingKey":"302045071","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Package
+        scanned by USPS.","CarrierCode":"PTS10","CarrierDescription":"Enroute to Local
+        USPS Facility","City":"OAKLAND","ConsumerEventMessage":"Package scanned by
+        USPS.","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510207200000-0600)\/","Description":"Enroute
+        to Local USPS Facility","EventCode":"UPROC","EventDescription":"Processed
+        by USPS","FacilityID":11365,"FacilityName":"OAKLAND","PostalCode":"946150001","State":"CA","Time":"\/Date(1511572800000-0600)\/","TrackingKey":"380748045","UpdateDate":"\/Date(-62135575200000-0600)\/"},{"CSREventMessage":"Label
+        created","CarrierCode":"LC","CarrierDescription":"Label Created","City":"","ConsumerEventMessage":"Label
+        created","CreateDate":"\/Date(-62135575200000-0600)\/","Date":"\/Date(1510120800000-0600)\/","Description":"Label
+        Created","EventCode":"LC","EventDescription":"Label Created","FacilityID":54049,"FacilityName":"","PostalCode":"","State":"","Time":"\/Date(1511549220000-0600)\/","TrackingKey":"380748045","UpdateDate":"\/Date(-62135575200000-0600)\/"}],"ReferenceNumber":"2881341","Service":"RETURN","ShipToAddressLine1":"100
+        Lakeview Pkwy","ShipToAddressLine2":"","ShipToCity":"Vernon Hills","ShipToName":"ThredUp
+        Returns IL Bag","ShipToPostalCode":"60061","ShipToState":"IL","Signer":null,"Status":"Delivered","TrackingNumber":"72123456","UnitOfMeasure":"pounds","Weight":3.2350}]}'
+    http_version:
+  recorded_at: Fri, 24 Nov 2017 14:24:10 GMT
+recorded_with: VCR 3.0.3
